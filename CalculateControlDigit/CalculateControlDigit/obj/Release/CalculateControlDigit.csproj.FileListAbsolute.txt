@@ -1,0 +1,10 @@
+C:\Users\fina.meranzova\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\bin\Release\CalculateControlDigit.exe.config
+C:\Users\fina.meranzova\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\bin\Release\CalculateControlDigit.exe
+C:\Users\fina.meranzova\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\bin\Release\CalculateControlDigit.pdb
+C:\Users\fina.meranzova\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Release\CalculateControlDigit.MainForm.resources
+C:\Users\fina.meranzova\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Release\CalculateControlDigit.Properties.Resources.resources
+C:\Users\fina.meranzova\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Release\CalculateControlDigit.csproj.GenerateResource.Cache
+C:\Users\fina.meranzova\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Release\CalculateControlDigit.csproj.CoreCompileInputs.cache
+C:\Users\fina.meranzova\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Release\CalculateControlDigit.exe
+C:\Users\fina.meranzova\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Release\CalculateControlDigit.pdb
+C:\Users\fina.meranzova\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Release\CalculateControlDigit.csprojResolveAssemblyReference.cache
