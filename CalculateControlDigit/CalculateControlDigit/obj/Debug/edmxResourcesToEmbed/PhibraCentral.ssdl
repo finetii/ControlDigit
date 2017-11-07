@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibraCentralModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="CyrName" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="LatName" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="ArticleGroupID" Type="int" Nullable="false" />
+    <Property Name="MeasureID" Type="int" Nullable="false" />
+    <Property Name="ProducerID" Type="int" Nullable="false" />
+    <Property Name="SaleDiscountTypeID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="text" Nullable="false" />
+    <Property Name="Remark" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="NumberInBox" Type="int" Nullable="false" />
+    <Property Name="SmallNumberInBox" Type="int" Nullable="false" />
+    <Property Name="OverrateGroupID" Type="int" Nullable="false" />
+    <Property Name="BasePrice" Type="decimal" Precision="19" Scale="2" Nullable="false" />
+    <Property Name="SalePrice" Type="decimal" Precision="19" Scale="2" Nullable="false" />
+    <Property Name="RetailerMaxPrice" Type="decimal" Precision="19" Scale="2" Nullable="false" />
+    <Property Name="SaleDiscountPercent" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="SaleDiscountWholesalePercent" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="ProducerCode" Type="varchar" MaxLength="30" />
+    <Property Name="ProducerDiscountPercent" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="ProducerRebatePercent" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="isDrug" Type="bit" Nullable="false" />
+    <Property Name="isStrongDrug" Type="bit" Nullable="false" />
+    <Property Name="isActive" Type="bit" Nullable="false" />
+    <Property Name="Barcode1" Type="varchar" MaxLength="20" />
+    <Property Name="Barcode2" Type="varchar" MaxLength="20" />
+    <Property Name="ArticlePharmGroupID" Type="int" />
+    <Property Name="NumberInPacking" Type="smallint" Nullable="false" />
+    <Property Name="ByOrder" Type="bit" />
+    <Property Name="Width" Type="decimal" Precision="19" Scale="3" />
+    <Property Name="Height" Type="decimal" Precision="19" Scale="3" />
+    <Property Name="Depth" Type="decimal" Precision="19" Scale="3" />
+    <Property Name="Weight" Type="decimal" Precision="19" Scale="3" />
+    <Property Name="InactivationDate" Type="smalldatetime" />
+    <Property Name="SupplierID" Type="int" />
+    <Property Name="isHospital" Type="bit" />
+    <Property Name="isDrugstoreAllowed" Type="bit" />
+    <Property Name="isForRefrigerator" Type="bit" />
+    <Property Name="DeliveryContract" Type="varchar" MaxLength="40" />
+    <Property Name="DurabilityInMonths" Type="int" />
+    <Property Name="isMedicalPrescription" Type="int" />
+    <Property Name="GenericName" Type="varchar" MaxLength="80" />
+    <Property Name="Attributes" Type="varchar" MaxLength="3" />
+    <Property Name="ProducerAnnualDiscountPercent" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="ProducerAnnualRebatePercent" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="ProducerPrepayDiscountPercent" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="ProducerPrepayRebatePercent" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="CustomerDiscountDelta" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="ArticleItemsCompensation" Type="numeric" Precision="19" Scale="2" />
+    <Property Name="isInDailyInventarization" Type="bit" />
+    <Property Name="LibraPromoProgramID" Type="int" />
+    <Property Name="LastModified" Type="datetime" />
+    <Property Name="InternetProhibition" Type="tinyint" />
+    <Property Name="isList5" Type="bit" />
+    <Property Name="NHIFPriceDifference" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="ReservedDiscount1" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="isRemovePrice" Type="bit" />
+    <Property Name="ReservedDiscount2" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="HospitalCompensation" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="HospitalCompensationType" Type="smallint" />
+    <Property Name="AdvertismentText" Type="varchar" MaxLength="200" />
+    <Property Name="AdvertismentTextWeb" Type="varchar" MaxLength="200" />
+    <Property Name="ATC_EU" Type="varchar" MaxLength="20" />
+    <Property Name="ATC_US" Type="varchar" MaxLength="20" />
+    <Property Name="CatNo" Type="tinyint" />
+    <Property Name="SubCatCode" Type="char" MaxLength="2" />
+    <Property Name="SubSubCatCode" Type="char" MaxLength="2" />
+    <Property Name="RxOTC" Type="varchar" MaxLength="10" />
+    <Property Name="OriginalGeneric" Type="varchar" MaxLength="20" />
+    <Property Name="IntrastatCode" Type="varchar" MaxLength="20" />
+    <Property Name="CountryCodeSender" Type="varchar" MaxLength="3" />
+    <Property Name="CountryCodeOrigin" Type="varchar" MaxLength="3" />
+    <Property Name="IntrastatTypeOfDeal" Type="varchar" MaxLength="10" />
+    <Property Name="IntrastatDeliveryTerms" Type="varchar" MaxLength="10" />
+    <Property Name="IntrastatTransportType" Type="varchar" MaxLength="10" />
+    <Property Name="CountryCodeSupplier" Type="varchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="NameLaw" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="100" />
+    <Property Name="Tel" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TaxNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Bulstat" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="MOLName" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="ReceiverName" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="Licence" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="DrugLicence" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ShipmentAddress" Type="varchar" MaxLength="100" />
+    <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceReceiveTypeID" Type="int" Nullable="false" />
+    <Property Name="AppUserID" Type="int" Nullable="false" />
+    <Property Name="CustomerGroupID" Type="int" Nullable="false" />
+    <Property Name="PostCodeID" Type="int" Nullable="false" />
+    <Property Name="AreaCodeID" Type="int" Nullable="false" />
+    <Property Name="RZOKCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="DaysDelayPayFree" Type="int" Nullable="false" />
+    <Property Name="DaysDelayPayNZOK" Type="int" Nullable="false" />
+    <Property Name="ArticleBGDiscountPercent" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="ArticleForeignDiscountPercent" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="ArticleNZOKDiscountPercent" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="MaxCredit" Type="decimal" Precision="19" Scale="2" Nullable="false" />
+    <Property Name="FixedProfitPercent" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="FixedOverratePercent" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="OverrateDecreasePercent" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="PaymentTypeID" Type="int" Nullable="false" />
+    <Property Name="PaymentTypeIDNZOK" Type="int" Nullable="false" />
+    <Property Name="PreferedDiscountTypeID" Type="int" Nullable="false" />
+    <Property Name="PreferedDiscountTypeIDNZOK" Type="int" Nullable="false" />
+    <Property Name="SaleDiscountTypeID" Type="int" Nullable="false" />
+    <Property Name="Remark" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="isActive" Type="bit" Nullable="false" />
+    <Property Name="isDiscountException" Type="bit" Nullable="false" />
+    <Property Name="isSaleOrderAllowed" Type="bit" Nullable="false" />
+    <Property Name="isDeleteAllowed" Type="bit" Nullable="false" />
+    <Property Name="isVATRegistered" Type="bit" Nullable="false" />
+    <Property Name="isDiscountInPrice" Type="bit" Nullable="false" />
+    <Property Name="isPreferedFinanceRebate" Type="bit" Nullable="false" />
+    <Property Name="isMathDiscountType" Type="bit" Nullable="false" />
+    <Property Name="isClient" Type="bit" Nullable="false" />
+    <Property Name="PharmacyConsultantID" Type="int" />
+    <Property Name="StockCredit" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="SoftwareID" Type="int" />
+    <Property Name="LibraEvent" Type="bit" />
+    <Property Name="PartnerCapital" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="PartnerEndDate" Type="smalldatetime" />
+    <Property Name="PartnerStartDate" Type="smalldatetime" />
+    <Property Name="isPricing" Type="bit" Nullable="false" />
+    <Property Name="ContractType" Type="smallint" />
+    <Property Name="ContractSum" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="BonusOborotPercent" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="BonusOborot" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="isPriceWithoutRounding" Type="bit" />
+    <Property Name="BankCountryCode" Type="varchar" MaxLength="2" />
+    <Property Name="BankCode" Type="varchar" MaxLength="8" />
+    <Property Name="BankName" Type="varchar" MaxLength="60" />
+    <Property Name="IBAN" Type="varchar" MaxLength="22" />
+    <Property Name="SoftwareConsultantID" Type="int" />
+    <Property Name="Status" Type="varchar" MaxLength="2" />
+    <Property Name="isPrintDelayPayments" Type="bit" />
+    <Property Name="isRabatDenied" Type="bit" Nullable="false" />
+    <Property Name="BonusOborotPercent2" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="isActionActavis" Type="bit" />
+    <Property Name="AuctionStartDate" Type="smalldatetime" />
+    <Property Name="AuctionEndDate" Type="smalldatetime" />
+    <Property Name="AppUserID2" Type="int" />
+    <Property Name="ContractMonthlyTax" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="ContractInternetPercent" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="ContractInternetSum" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="isPricingNZOK" Type="bit" />
+    <Property Name="RetailerPriceCalcTypeID" Type="smallint" />
+    <Property Name="RetailerPriceCalcTypeIDNZOK" Type="smallint" />
+    <Property Name="ShowWarningLabel" Type="bit" />
+    <Property Name="isDiscountInPriceNZOK" Type="bit" />
+    <Property Name="MerchandiserID" Type="int" />
+    <Property Name="isActionDenied" Type="bit" />
+    <Property Name="isSpecialOrder" Type="bit" />
+    <Property Name="NationalCustomerGroupID" Type="int" />
+    <Property Name="postcode" Type="smallint" />
+    <Property Name="isProtocol5Allowed" Type="bit" />
+    <Property Name="ContractDate" Type="smalldatetime" />
+    <Property Name="ContractInstallationDate" Type="smalldatetime" />
+    <Property Name="IMSGroup" Type="smallint" />
+    <Property Name="CustomerDeliveryGroup" Type="int" />
+    <Property Name="isJoinInMyPharmacy" Type="bit" />
+    <Property Name="isJoinInAdvertisingShopWindows" Type="bit" />
+    <Property Name="IMSCodeID" Type="int" />
+    <Property Name="isNZOKHalfMargin" Type="bit" />
+    <Property Name="SaleDiscountTypeIDNZOK" Type="int" />
+    <Property Name="FixedProfitPercentNZOK" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="CodeLocation" Type="varchar" MaxLength="80" />
+    <Property Name="isNZOKDelayedAllowed" Type="bit" />
+    <Property Name="NZOKDelayedDays" Type="int" />
+    <Property Name="StartBonus" Type="smalldatetime" />
+    <Property Name="EndBonus" Type="smalldatetime" />
+    <Property Name="CollateralTypeID" Type="int" />
+    <Property Name="CollateralSum" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="SAPNumber" Type="bigint" />
+    <Property Name="isJoinOrderDenied" Type="bit" />
+    <Property Name="MaxDeliveryDays" Type="int" />
+    <Property Name="isPharmacyMaxNZOKPrice" Type="bit" />
+    <Property Name="XMLElectronicInvoice" Type="bit" />
+    <Property Name="IndividualConditions" Type="bit" />
+    <Property Name="ContractCustomerID" Type="int" />
+    <Property Name="EFakturaEmail" Type="varchar" MaxLength="80" />
+    <Property Name="XMLEIStartDate" Type="smalldatetime" />
+    <Property Name="SendPricelist" Type="smallint" />
+    <Property Name="SendPricelistEmail" Type="varchar" MaxLength="100" />
+    <Property Name="isPrintDurability" Type="bit" />
+    <Property Name="NumMonths" Type="tinyint" />
+    <Property Name="suspensionDays" Type="int" />
+    <Property Name="ContractPaymentDays" Type="int" />
+    <Property Name="ContractInvoicedMonths" Type="int" />
+    <Property Name="Category" Type="varchar" MaxLength="2" />
+    <Property Name="Segment" Type="varchar" MaxLength="1" />
+    <Property Name="Potential" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="RiskClass" Type="tinyint" />
+    <Property Name="StateOwned" Type="bit" />
+    <Property Name="PaymentClassification" Type="tinyint" />
+    <Property Name="ClassPaymentDays" Type="int" />
+    <Property Name="ClassMaxCreditLimit" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="AvgPaymentDays" Type="int" />
+    <Property Name="RoyaltyCode" Type="int" />
+    <Property Name="ExcludeHighCostFromLimit" Type="bit" />
+    <Property Name="OverratePercent" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="isWithoutInternetProhibition" Type="bit" />
+    <Property Name="Watchlist" Type="bit" />
+    <Property Name="isGrayList" Type="bit" />
+    <Property Name="GrayListEntryDate" Type="smalldatetime" />
+    <Property Name="isBlackList" Type="bit" />
+    <Property Name="isBlackListActive" Type="bit" />
+    <Property Name="BlackListEntryDate" Type="smalldatetime" />
+    <Property Name="ExtraEmail" Type="varchar" MaxLength="200" />
+    <Property Name="ServiceCategory" Type="varchar" MaxLength="1" />
+    <Property Name="AssessmentDate" Type="smalldatetime" />
+    <Property Name="CalcPotential" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="AvgNetoVATL12" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="AvgPaymentTerms" Type="int" />
+    <Property Name="LoanLeftByGroup" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="CalcMaxCredit" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="OldName" Type="varchar" MaxLength="80" />
+    <Property Name="isPharmacyMAXFreePrice" Type="bit" />
+    <Property Name="isBetty" Type="bit" />
+    <Property Name="isPharmacyZeroRebatePrice" Type="bit" />
+    <Property Name="MaxCreditK1" Type="decimal" Precision="19" Scale="2" />
+  </EntityType>
+  <Function Name="fnx_Pharmos_PZN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+    <Parameter Name="a" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="LibraCentralModelStoreContainer">
+    <EntitySet Name="Article" EntityType="Self.Article" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

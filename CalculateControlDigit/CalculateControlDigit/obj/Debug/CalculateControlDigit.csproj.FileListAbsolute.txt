@@ -8,3 +8,17 @@ C:\Users\fina.meranzova\Documents\GitHub\ControlDigit\CalculateControlDigit\Calc
 C:\Users\fina.meranzova\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Debug\CalculateControlDigit.csproj.CoreCompileInputs.cache
 C:\Users\fina.meranzova\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Debug\CalculateControlDigit.exe
 C:\Users\fina.meranzova\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Debug\CalculateControlDigit.pdb
+D:\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\bin\Debug\CalculateControlDigit.exe.config
+D:\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\bin\Debug\CalculateControlDigit.exe
+D:\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\bin\Debug\CalculateControlDigit.pdb
+D:\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Debug\CalculateControlDigit.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Debug\CalculateControlDigit.MainForm.resources
+D:\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Debug\CalculateControlDigit.Properties.Resources.resources
+D:\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Debug\CalculateControlDigit.csproj.GenerateResource.Cache
+D:\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Debug\CalculateControlDigit.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Debug\CalculateControlDigit.exe
+D:\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\obj\Debug\CalculateControlDigit.pdb
+D:\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\bin\Debug\EntityFramework.dll
+D:\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\bin\Debug\EntityFramework.xml
+D:\Documents\GitHub\ControlDigit\CalculateControlDigit\CalculateControlDigit\bin\Debug\EntityFramework.SqlServer.xml
